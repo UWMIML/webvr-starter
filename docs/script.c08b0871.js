@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({21:[function(require,module,exports) {
+})({8:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -38654,7 +38654,7 @@ exports.GeometryUtils = GeometryUtils;
 exports.ImageUtils = ImageUtils;
 exports.Projector = Projector;
 exports.CanvasRenderer = CanvasRenderer;
-},{}],26:[function(require,module,exports) {
+},{}],17:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -38704,7 +38704,7 @@ exports.default = {
   ERROR_REQUEST_STATE_CHANGE_REJECTED: ERROR_REQUEST_STATE_CHANGE_REJECTED,
   ERROR_UNKOWN: ERROR_UNKOWN
 };
-},{}],30:[function(require,module,exports) {
+},{}],26:[function(require,module,exports) {
 'use strict';
 
 var has = Object.prototype.hasOwnProperty
@@ -39017,7 +39017,7 @@ if ('undefined' !== typeof module) {
   module.exports = EventEmitter;
 }
 
-},{}],31:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 /*!
 * screenfull
 * v3.0.0 - 2015-11-24
@@ -39122,7 +39122,7 @@ if ('undefined' !== typeof module) {
 		window.screenfull = screenfull;
 	}
 })();
-},{}],25:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -39409,7 +39409,7 @@ var WebVRManager = function (_EventEmitter) {
 }(_eventemitter2.default);
 
 exports.default = WebVRManager;
-},{"./states":26,"eventemitter3":30,"screenfull":31}],27:[function(require,module,exports) {
+},{"./states":17,"eventemitter3":26,"screenfull":27}],18:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -39530,7 +39530,7 @@ var generateCSS = exports.generateCSS = function generateCSS(options) {
 
     return '\n    @font-face {\n        font-family: \'Karla\';\n        font-style: normal;\n        font-weight: 400;\n        src: local(\'Karla\'), local(\'Karla-Regular\'), \n             url(https://fonts.gstatic.com/s/karla/v5/31P4mP32i98D9CEnGyeX9Q.woff2) format(\'woff2\');\n        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;\n    }\n    @font-face {\n        font-family: \'Karla\';\n        font-style: normal;\n        font-weight: 400;\n        src: local(\'Karla\'), local(\'Karla-Regular\'), \n             url(https://fonts.gstatic.com/s/karla/v5/Zi_e6rBgGqv33BWF8WTq8g.woff2) format(\'woff2\');\n        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, \n                       U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;\n    }\n\n    button.' + cssPrefix + '-button {\n        font-family: \'Karla\', sans-serif;\n\n        border: ' + borderColor + ' ' + borderWidth + 'px solid;\n        border-radius: ' + borderRadius + 'px;\n        box-sizing: border-box;\n        background: ' + (options.background ? options.background : 'none') + ';\n\n        height: ' + height + 'px;\n        min-width: ' + fontSize * 9.6 + 'px;\n        display: inline-block;\n        position: relative;\n\n        cursor: pointer;\n    }\n    \n    button.' + cssPrefix + '-button:focus {\n      outline: none;\n    }\n\n    /*\n    * Logo\n    */\n\n    .' + cssPrefix + '-logo {\n        width: ' + height + 'px;\n        height: ' + height + 'px;\n        position: absolute;\n        top:0px;\n        left:0px;\n        width: ' + (height - 4) + 'px;\n        height: ' + (height - 4) + 'px;\n    }\n    .' + cssPrefix + '-svg {\n        fill: ' + options.color + ';\n        margin-top: ' + ((height - fontSize * _LOGO_SCALE) / 2 - 2) + 'px;\n        margin-left: ' + height / 3 + 'px;\n    }\n    .' + cssPrefix + '-svg-error {\n        fill: ' + options.color + ';\n        display:none;\n        margin-top: ' + ((height - 28 / 18 * fontSize * _LOGO_SCALE) / 2 - 2) + 'px;\n        margin-left: ' + height / 3 + 'px;\n    }\n\n\n    /*\n    * Title\n    */\n\n    .' + cssPrefix + '-title {\n        color: ' + options.color + ';\n        position: relative;\n        font-size: ' + fontSize + 'px;\n        padding-left: ' + height * 1.05 + 'px;\n        padding-right: ' + (borderRadius - 10 < 5 ? height / 3 : borderRadius - 10) + 'px;\n    }\n\n    /*\n    * disabled\n    */\n\n    button.' + cssPrefix + '-button[disabled=true] {\n        opacity: ' + options.disabledOpacity + ';\n    }\n\n    button.' + cssPrefix + '-button[disabled=true] > .' + cssPrefix + '-logo > .' + cssPrefix + '-svg {\n        display:none;\n    }\n\n    button.' + cssPrefix + '-button[disabled=true] > .' + cssPrefix + '-logo > .' + cssPrefix + '-svg-error {\n        display:initial;\n    }\n  ';
 };
-},{}],28:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -39973,7 +39973,7 @@ var ifChild = function ifChild(el, cssPrefix, suffix, fn) {
   var c = el.querySelector('.' + cssPrefix + '-' + suffix);
   c && fn(c);
 };
-},{"./webvr-manager":25,"./dom":27,"./states":26,"eventemitter3":30}],29:[function(require,module,exports) {
+},{"./webvr-manager":16,"./dom":18,"./states":17,"eventemitter3":26}],20:[function(require,module,exports) {
 'use strict';
 
 var _enterVrButton = require('./enter-vr-button');
@@ -40074,7 +40074,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
     }
   });
 }
-},{"./enter-vr-button":28,"./states":26}],22:[function(require,module,exports) {
+},{"./enter-vr-button":19,"./states":17}],9:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -40120,7 +40120,7 @@ exports.WebVRManager = _webvrManager2.default; // Copyright 2016 Google Inc.
 //     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //     See the License for the specific language governing permissions and
 // limitations under the License.
-},{"./webvr-manager":25,"./states":26,"./dom":27,"./enter-vr-button":28,"./aframe-component":29}],17:[function(require,module,exports) {
+},{"./webvr-manager":16,"./states":17,"./dom":18,"./enter-vr-button":19,"./aframe-component":20}],10:[function(require,module,exports) {
 var define;
 var global = arguments[3];
 (function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.WebVRPolyfill = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
@@ -46435,7 +46435,7 @@ module.exports.WebVRPolyfill = WebVRPolyfill;
 
 },{"./base.js":3,"./cardboard-vr-display.js":6,"./display-wrappers.js":9,"./mouse-keyboard-vr-display.js":15,"./util.js":22}]},{},[13])(13)
 });
-},{}],23:[function(require,module,exports) {
+},{}],6:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -46595,7 +46595,7 @@ var VRControls = function VRControls(object, onError) {
     */
 
 exports.default = VRControls;
-},{"three":21}],24:[function(require,module,exports) {
+},{"three":8}],7:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -47030,7 +47030,7 @@ var VREffect = function VREffect(renderer, onError) {
     */
 
 exports.default = VREffect;
-},{"three":21}],19:[function(require,module,exports) {
+},{"three":8}],4:[function(require,module,exports) {
 'use strict';
 
 var _three = require('three');
@@ -47100,7 +47100,7 @@ function onLoad() {
 
   // Add a repeating grid as a skybox.
   var loader = new THREE.TextureLoader();
-  loader.load('img/box.png', onTextureLoaded);
+  loader.load('../img/box.png', onTextureLoaded);
 
   // For high end VR devices like Vive and Oculus, take into account the stage
   // parameters provided.
@@ -47237,8 +47237,14 @@ function setStageDimensions(stage) {
   cube.position.set(0, controls.userHeight, 0);
 }
 
-window.addEventListener('load', onLoad);
-},{"three":21,"webvr-ui":22,"webvr-polyfill":17,"./VRControls":23,"./VREffect":24}],14:[function(require,module,exports) {
+function ready(cb) {
+  /in/.test(document.readyState) // in = loadINg
+  ? setTimeout(ready.bind(null, cb), 9) : cb();
+}
+
+ready(onLoad);
+// window.addEventListener('load', onLoad);
+},{"three":8,"webvr-ui":9,"webvr-polyfill":10,"./VRControls":6,"./VREffect":7}],30:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -47267,7 +47273,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '65523' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59551' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -47408,5 +47414,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[14,19], null)
+},{}]},{},[30,4], null)
 //# sourceMappingURL=/script.c08b0871.map

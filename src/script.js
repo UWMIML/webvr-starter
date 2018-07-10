@@ -48,7 +48,7 @@ function onLoad() {
 
   // Add a repeating grid as a skybox.
   var loader = new THREE.TextureLoader();
-  loader.load('img/box.png', onTextureLoaded);
+  loader.load('../img/box.png', onTextureLoaded);
 
   // For high end VR devices like Vive and Oculus, take into account the stage
   // parameters provided.
@@ -188,4 +188,11 @@ function setStageDimensions(stage) {
   cube.position.set(0, controls.userHeight, 0);
 }
 
-window.addEventListener('load', onLoad);
+function ready(cb) {
+  /in/.test(document.readyState) // in = loadINg
+    ? setTimeout(ready.bind(null, cb), 9)
+    : cb();
+}
+
+ready(onLoad);
+// window.addEventListener('load', onLoad);

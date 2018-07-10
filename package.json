@@ -4,8 +4,8 @@
   "main": "index.html",
   "scripts": {
     "postinstall": "npm i -g parcel-bundler",
-    "start": "parcel index.html",
-    "build": "parcel build src/script.js"
+    "start": "rm -rf docs && parcel serve -d docs index.html",
+    "build": "rm -rf docs && parcel build -d docs src/script.js"
   },
   "dependencies": {
     "es6-promise": "latest",
