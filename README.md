@@ -4,15 +4,18 @@ This webVR starter was built with a guide from [Google][6] and accompanied by a 
 Here we try to reproduce the moonphases web project initially done [on codepen][2] with just
 [Three.js][3] and some mouse controls.
 
+[Demo][7]
+
 ### Running the project
-This project can be run on any server. For development purpose I use [http-server][4] which
-can be installed with:
+If you do not have npm installed already, get it from [here][5]. Once installed, just run:
 
 ```
-npm i -g http-server
+npm i
 ```
-
-if you already have npm installed. If you don't, it can be gotten from [here][5].
+to install all dependencies. And run the server with:
+```
+npm start
+```
 
 
 [1]: https://github.com/borismus/webvr-boilerplate
@@ -21,3 +24,4 @@ if you already have npm installed. If you don't, it can be gotten from [here][5]
 [4]: http://npm.im/http-server
 [5]: https://nodejs.org/en/download/
 [6]: https://developers.google.com/web/fundamentals/vr/getting-started-with-webvr/
+[7]: https://uwmiml.github.io/webvr-starter/
