@@ -1,8 +1,12 @@
 {
   "name": "webvr-boilerplate",
-  "version": "0.5.0",
   "description": "A starting point for cross-platform web-based VR experiences.",
   "main": "index.html",
+  "scripts": {
+    "postinstall": "npm i -g parcel-bundler",
+    "start": "parcel index.html",
+    "build": "parcel build src/script.js"
+  },
   "dependencies": {
     "es6-promise": "latest",
     "three": "latest",
@@ -16,15 +20,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/googlevr/webvr-boilerplate.git"
+    "url": "git+https://github.com/UWMIML/webvr-starter.git"
   },
   "keywords": [
     "vr"
-  ],
-  "author": "Boris Smus <boris@smus.com>",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/googlevr/webvr-boilerplate/issues"
-  },
-  "homepage": "https://github.com/googlevr/webvr-boilerplate#readme"
+  ]
 }
