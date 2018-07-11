@@ -26,6 +26,7 @@ function onLoad() {
   // Only enable it if you actually need to.
   // Alpha true to  make the scene a see through and allow background image
   var renderer = new THREE.WebGLRenderer({antialias: true});
+  renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(window.devicePixelRatio);
 
   // Append the canvas element created by the renderer to document body element.
