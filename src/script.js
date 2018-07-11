@@ -3,6 +3,7 @@ import * as webvrui from 'webvr-ui';
 import WebVRPolyfill from 'webvr-polyfill';
 import VRControls from './VRControls';
 import VREffect from './VREffect';
+import BoxImage from '../img/box.png';
 
 // new WebVRPolyfill();
 // Last time the scene was rendered.
@@ -17,6 +18,7 @@ var cube;
 var controls;
 var effect;
 var camera;
+var skybox;
 // EnterVRButton for rendering enter/exit UI.
 var vrButton;
 
@@ -49,7 +51,7 @@ function onLoad() {
 
   // Add a repeating grid as a skybox.
   var loader = new THREE.TextureLoader();
-  loader.load('../img/box.png', onTextureLoaded);
+  loader.load(BoxImage, onTextureLoaded);
 
   // For high end VR devices like Vive and Oculus, take into account the stage
   // parameters provided.
