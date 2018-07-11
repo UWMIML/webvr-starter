@@ -79,13 +79,13 @@ function onLoad() {
 
   // Position cube mesh to be right in front of you.
   cube.position.set(0, controls.userHeight, -1);
-  // earth.position.set(0, controls.userHeight, -1);
+  earth.position.set(0, controls.userHeight, -1);
   var hlight = new THREE.HemisphereLight(0xfefefe, 0x000000, 1);
   var dlight = new THREE.DirectionalLight(0xeaeaea);
 
   // Add cube mesh to your three.js scene
   scene.add(cube);
-  // scene.add(earth);
+  scene.add(earth);
   scene.add(dlight);
   scene.add(hlight);
 
@@ -189,6 +189,7 @@ function setStageDimensions(stage) {
 
   // Place the cube in the middle of the scene, at user height.
   cube.position.set(0, controls.userHeight, 0);
+  earth.position.set(0, controls.userHeight, 0);
 }
 
 function ready(cb) {
