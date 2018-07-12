@@ -1,5 +1,7 @@
 # WebVR Starter
 
+> This turned out to rely on a boilerplate that is unmaintained. Hence, while you may see a 3D object rendered in scene on browser, it never renders on HMDs.
+
 This webVR starter was built with a guide from [Google][6] and accompanied by a [boilerplate][1].
 Here we try to reproduce the moonphases web project initially done [on codepen][2] with just
 [Three.js][3] and some mouse controls.
