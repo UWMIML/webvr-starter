@@ -59,33 +59,17 @@ function onLoad() {
 
   // Create 3D objects.
   var geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
-  var earthGeometry = new THREE.SphereGeometry(10, 64, 64);
-  var moonGeometry = new THREE.SphereGeometry(3, 16, 16);
-  var sunGeometry = new THREE.SphereGeometry(25, 80, 80);
 
-  var loader = new THREE.TextureLoader()
-  loader.crossOrigin = true;
-  var earthTexture = loader.load('https://cdn.rawgit.com/josephrexme/csa/b639ba3e/images/earthmap.jpg');
-  var moonTexture = loader.load('https://cdn.rawgit.com/josephrexme/csa/09bb2d3c/images/MoonColorMap.png');
-  var sunTexture = loader.load('https://cdn.rawgit.com/josephrexme/csa/09bb2d3c/images/sun_texture.jpg');
-  var earthMaterial = new THREE.MeshLambertMaterial({ map: earthTexture });
-  var moonMaterial = new THREE.MeshLambertMaterial({ map: moonTexture });
-  var sunMaterial = new THREE.MeshLambertMaterial({ map: sunTexture });
-  var earth = new THREE.Mesh(earthGeometry, earthMaterial);
-  var moon = new THREE.Mesh(moonGeometry, moonMaterial);
-  var sun = new THREE.Mesh(sunGeometry, sunMaterial);
   var material = new THREE.MeshNormalMaterial();
   cube = new THREE.Mesh(geometry, material);
 
   // Position cube mesh to be right in front of you.
   cube.position.set(0, controls.userHeight, -1);
-  earth.position.set(0, controls.userHeight, -1);
   var hlight = new THREE.HemisphereLight(0xfefefe, 0x000000, 1);
   var dlight = new THREE.DirectionalLight(0xeaeaea);
 
   // Add cube mesh to your three.js scene
   scene.add(cube);
-  scene.add(earth);
   scene.add(dlight);
   scene.add(hlight);
 
@@ -189,7 +173,6 @@ function setStageDimensions(stage) {
 
   // Place the cube in the middle of the scene, at user height.
   cube.position.set(0, controls.userHeight, 0);
-  earth.position.set(0, controls.userHeight, 0);
 }
 
 function ready(cb) {
