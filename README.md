@@ -1,6 +1,6 @@
 # WebVR Starter
 
-> This turned out to rely on a boilerplate that is unmaintained. Hence, while you may see a 3D object rendered in scene on browser, it never renders on HMDs.
+> This turned out to rely on a boilerplate that is unmaintained. Hence, while you may see a 3D object rendered in scene on browser, it never renders on HMDs. Look at [webvr-planets instead][8]
 
 This webVR starter was built with a guide from [Google][6] and accompanied by a [boilerplate][1].
 Here we try to reproduce the moonphases web project initially done [on codepen][2] with just
@@ -27,3 +27,4 @@ npm start
 [5]: https://nodejs.org/en/download/
 [6]: https://developers.google.com/web/fundamentals/vr/getting-started-with-webvr/
 [7]: https://uwmiml.github.io/webvr-starter/
+[8]: https://github.com/uwmiml/webvr-planets

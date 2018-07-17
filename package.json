@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "npm i -g parcel-bundler",
     "start": "rm -rf .serve && parcel serve -d .serve index.html",
-    "build": "rm -rf docs/box* && parcel build -d docs --public-url https://uwmiml.github.io/webvr-starter/ src/script.js"
+    "build": "parcel build -d docs --public-url https://uwmiml.github.io/webvr-starter/ src/script.js"
   },
   "dependencies": {
     "es6-promise": "latest",
